@@ -1,0 +1,95 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
+.active{
+	background: red;
+}
+.container{
+	width: 100vw;
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+.child{
+	 scroll-snap-align: start;
+}
+.header{
+	width: 100vw;
+	height: 80px;
+	background: #678DA4;
+	position: fixed;
+	z-index: 9999;
+	opacity: 0.5
+}
+.vertical-menu{
+	position: fixed;
+	top: 30%;
+	right: 20px;
+	z-index: 10
+}
+.vertical-menu ul {
+	list-style: none;
+	transform: rotate(90deg);
+	position: relative;
+}
+.vertical-menu ul li{
+	display: inline-block;
+}
+.vertical-menu::after{
+	content: "";
+	width: 5px;
+	height: 30px;
+	background: red;
+	position: absolute;
+	top:-120px;
+	right: 80px;
+}
+.vertical-menu::before{
+	content: "";
+	width: 5px;
+	height: 30px;
+	background: red;
+	position: absolute;
+		
+}
+.bg-1{
+	width: 100vw;
+	height: 100vh;
+	background: #7B82CB;
+	position: relative;
+}
+.scroll-down{
+	position: absolute;
+	color: white;
+	top:30%;
+	left: 20px;
+	writing-mode: vertical-rl;
+	transform: rotate(-180deg)
+}
+.banner-img{
+	width: 50%;
+	height: 100vh;
+	background: #515151;
+	float: left;
+}
+.banner-text{
+	width: 50%;
+	height: 100vh;
+	background: #A1AA70;
+	float: right;
+}
+.bg-2{
+	width: 100vw;
+	height: 100vh;
+	background: #9A9141;
+}.bg-3{
+	width: 100vw;
+	height: 100vh;
+	background: #43B142;
+}
+
